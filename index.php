@@ -28,7 +28,7 @@ if( ! function_exists('is_spam_check') ) {
 		if( ! ( $email_address > '' ) ) // WordPress will be dealing with this one already (validation)
 			return;
 
-		if( strpos( $email_address, "@" ) ) // WordPress will be dealing with this one already (validation)
+		if( ! is_numeric( strpos( $email_address, "@" ) ) ) // WordPress will be dealing with this one already (validation)
 			return;		
 
 		$html = file_get_contents("https://cleantalk.org/blacklists?record=$email_address");
