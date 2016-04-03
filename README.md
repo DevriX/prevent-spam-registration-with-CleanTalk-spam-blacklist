@@ -1,4 +1,4 @@
-# prevent-spam-registration-with-CleanTalk-spam-blacklist
+# Prevent spam registration with CleanTalk's spam blacklist
 Preventing spam registration on your blog with CleanTalk's own spam blacklist tool
 
 Using cleantalk's spam blacklist to prevent spam registration on your WordPress site
