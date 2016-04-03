@@ -50,7 +50,7 @@ add_filter( 'registration_errors', function( $errors, $user_login, $user_email )
 
     if ( is_spam_check( $user_email ) ) {
         $errors->add( 'spam_registration', "Sorry, we can't complete your request." );
-        // You can do additional stuff here to punish the spammer, maybe telling them to FO (P.S, bots!)
+        // You can do additional stuff here to punish the spammer, like recording this email and timestamp and other info, or maybe telling the spammer to FO (P.S, bots!)
     }
 
     return $errors;
