@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Prevent spam registration with CleanTalk's spam blacklist
-Plugin URI: 
+Plugin URI: https://github.com/elhardoum/prevent-spam-registration-with-CleanTalk-spam-blacklist/
 Description: Preventing spam registration on your blog with CleanTalk's own spam blacklist tool
 Author: Samuel Elh
 Version: 0.1
