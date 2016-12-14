@@ -5,7 +5,7 @@ Plugin Name: Prevent spam registration with CleanTalk's spam blacklist
 Plugin URI: https://github.com/elhardoum/prevent-spam-registration-with-CleanTalk-spam-blacklist/
 Description: Preventing spam registration on your blog with CleanTalk's own spam blacklist tool
 Author: Samuel Elh
-Version: 0.1
+Version: 0.2
 Author URI: http://samelh.com
 */
 
@@ -32,7 +32,7 @@ if( ! function_exists('is_spam_check') ) {
 			return;		
 
 		$html = file_get_contents("https://cleantalk.org/blacklists?record=$email_address");
-		$is_spam = is_numeric( strpos( $html, "is reported as spam" ) );
+		$is_spam = is_numeric( strpos( strtolower($html), "reported as spam" ) );
 		
 		// boolean (true|false)
 		return (bool) $is_spam;
